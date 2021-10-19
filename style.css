@@ -1,0 +1,38 @@
+html,
+body {
+  font-family: sans-serif;
+}
+.container {
+  background-color: red;
+}
+.hero {
+    background-color: blue;
+}
+.hero-content {
+    
+}
+.projects {
+  display: flex;
+  flex-direction: column;
+}
+.project-list-item {
+  list-style: none;
+}
+.project-list-item {
+  display: flex;
+}
+.project-thumb {
+  background-color: bisque;
+}
+.project-content {
+}
+.project-title {
+}
+.project-description {
+}
+
+.project-tech {
+  display: flex;
+}
+.project-link {
+}
