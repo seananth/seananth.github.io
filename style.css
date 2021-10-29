@@ -63,13 +63,15 @@ a:hover {
   padding: 1em;
   display: flex;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+
+  margin-bottom: 1em;
 }
 
 .project-thumb {
-  background-color: black;
-  height: 250px;
   width: 400px;
+  height: 200px;
   border-radius: 8px;
+  overflow: hidden;
 }
 .gif {
   width: 100%;
@@ -122,6 +124,7 @@ a:hover {
   .project-thumb {
     height: 200px;
     width: 300px;
+    border-radius: 8px;
   }
   .projects-header {
     width: auto;
