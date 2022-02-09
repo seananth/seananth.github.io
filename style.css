@@ -71,13 +71,13 @@ a:hover {
   list-style: none;
   padding: 1em;
   display: flex;
-  /* box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px; */
 
   margin-bottom: 4em;
   width: 900px;
 }
 .project-list-item:hover {
   transform: scale(1.01);
+  box-shadow: #3884ff 0px 2px 8px 0px;
 }
 
 .project-thumb {
