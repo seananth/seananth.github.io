@@ -9,159 +9,246 @@
       src="https://kit.fontawesome.com/0f9b4aa4e2.js"
       crossorigin="anonymous"
     ></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;900&display=swap" rel="stylesheet">
-    
-    <link rel="apple-touch-icon" sizes="180x180" href="public/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="public/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="public/favicon-16x16.png">
-    <link rel="manifest" href="public/site.webmanifest">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="public/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="public/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="public/favicon-16x16.png"
+    />
+    <link rel="manifest" href="public/site.webmanifest" />
     <title>Sean Säfström</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              primary: "#fbfea3",
+              background: "#008080",
+            },
+          },
+        },
+      };
+    </script>
   </head>
-  <body>
-    <div class="container">
-      <section class="hero">
-        <div class="hero-content">
-          <img
-            class="profile-pic"
-            src="/public/profilepic.jpeg"
-            alt="profile picture"
-          />
-          <h2 class="head-text">Sean Säfström</h2>
-          <p>Welcome to my corner of the internet!</p>
-        </div>
-      </section>
-
-      <section class="socials">
-        <a
-          class="social-item"
-          href="https://github.com/seananth"
-          target="”_blank”"
-        >
-          <i class="fab fa-github fa-lg"></i>
-        </a>
-        <a
-          class="social-item"
-          href="https://www.linkedin.com/in/sean-s%C3%A4fstr%C3%B6m/"
-          target="”_blank”"
-        >
-          <i class="fab fa-linkedin-in fa-lg"></i>
-        </a>
-      </section>
-
-      <section class="projects">
-        <div class="projects-header">
-          <h2>Projects</h2>
-        </div>
-        <!-- fireforms app -->
-        <div class="project-list-item">
-            <div class="project-thumb">
-        
-              <img src="/public/builder.png" alt="fireforms builder" class="gif">
+  <body class="bg-primary h-screen font-mono flex items-center px-2 md:px-0">
+    <div
+      class="bg-background py-4 rounded-md h-[calc(100vh-74px)] container mx-auto px-12 max-w-[800px] overflow-y-scroll example"
+    >
+      <section id="intro">
+        <div class="flex items-center justify-between text-primary p-4">
+          <div class="flex gap-4 items-center">
+            <img
+              class="w-16 rounded-full"
+              src="./public/profilepic.jpeg"
+              alt="me"
+            />
+            <div>
+              <p class="text-lg">Sean Säfström</p>
+              <p>Javascript Engineer - Always building 🚀</p>
             </div>
-            <div class="project-content">
-              <div class="project-title">
-                <h2>FireForms App</h2>
-              </div>
-              <div class="project-description">
-                <p>
-                  A web app that help users build multi-page forms through a drag and drop builder. User accounts, payment through stripe and fully embeddable forms. Download form responses or integrate with CRM of your choosing
+          </div>
+          <div class="flex flex-col gap-2">
+            <a
+              class="hover:animate-spin"
+              href="https://github.com/seananth"
+              target="”_blank”"
+            >
+              <i class="fab fa-github fa-lg"></i>
+            </a>
+            <a
+              class="hover:animate-spin"
+              href="https://www.linkedin.com/in/sean-s%C3%A4fstr%C3%B6m/"
+              target="”_blank”"
+            >
+              <i class="fab fa-linkedin-in fa-lg"></i>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <div class="text-primary w-full mb-8">
+        <hr class="hr-custom" />
+      </div>
+
+      <section id="projects">
+        <div class="flex flex-col gap-4">
+          <!--left aligned  -->
+          <div class="flex w-full justify-between p-2">
+            <div class="flex flex-col gap-1 text-primary w-full">
+              <h2 class="text-lg">SpotEnt (current)</h2>
+
+              <p class="text-sm">
+                Turn Your Ideas Into Impactful Newsletters with SpotEnt.
+                launching stunning newsletters is as easy as clicking 'send.'
+                Elevate your message, grow your community, and watch your
+                digital influence soar.
+              </p>
+
+              <div class="flex items-center justify-end gap-2">
+                <p class="text-xs">
+                  <a class="" href="https://www.spotent.co/" target="”_blank”">
+                    <i class="fas fa-external-link-alt"></i>
+                  </a>
                 </p>
               </div>
-              <div class="project-tech">
-                <p>React -</p>
-                <p>Express -</p>
-                <p>Node.js -</p>
-                <p>MongoDB</p>
+              <ul class="flex gap-2 justify-end text-sm">
+                <li>NextJS |</li>
+                <li>Prisma |</li>
+                <li>AWS |</li>
+                <li>Redis |</li>
+                <li>BullMQ</li>
+              </ul>
+            </div>
+          </div>
+          <!-- / left aligned -->
+          <div class="text-primary w-full mb-2">
+            <hr class="hr-custom" />
+          </div>
+          <!--right aligned  -->
+          <div class="w-full flex justify-between = p-2">
+            <div class="w-full flex flex-col text-right gap-1 text-primary">
+              <h2 class="text-lg">SpaceToast</h2>
+
+              <p class="text-sm">
+                A crypto newsletter designed to demystify cryptocurrency for the
+                everyday tech enthusiast, powered by Next.js and managed with
+                Sanity CMS.
+              </p>
+
+              <div class="flex items-center gap-2">
+                <p class="text-xs">
+                  <a class="" href="https://spacetoast.co/" target="”_blank”">
+                    <i class="fas fa-external-link-alt"></i>
+                  </a>
+                </p>
               </div>
-              <div class="project-link">
-                <p><i>(Code available at request)<i></p>
-               
+              <ul class="flex gap-2 text-sm">
+                <li>NextJS |</li>
+                <li>Typescript |</li>
+                <li>Sanity CMS</li>
+              </ul>
+            </div>
+          </div>
+          <!-- / right aligned -->
+          <div class="text-primary w-full mb-2">
+            <hr class="hr-custom" />
+          </div>
+          <!--left aligned  -->
+          <div class="flex w-full justify-between = p-2">
+            <div class="flex flex-col gap-1 text-primary w-full">
+              <h2 class="text-lg">Ducktize</h2>
+
+              <p class="text-sm">
+                Comprehensive project management software tailored for
+                subscription-based services, featuring a robust customer portal
+                to facilitate seamless collaboration.
+              </p>
+
+              <div class="flex items-center justify-end gap-2">
+                <p class="text-xs">
+                  <a class="" href="https://ducktize.com/" target="”_blank”">
+                    <i class="fas fa-external-link-alt"></i>
+                  </a>
+                </p>
+              </div>
+              <ul class="flex gap-2 justify-end text-sm">
+                <li>NextJS |</li>
+                <li>Typescript |</li>
+                <li>Prisma</li>
+              </ul>
+            </div>
+          </div>
+          <!-- / left aligned -->
+          <div class="text-primary w-full mb-2">
+            <hr class="hr-custom" />
+          </div>
+          <!--right aligned  -->
+          <div class="w-full flex justify-between = p-2">
+            <div class="w-full flex flex-col text-right gap-1 text-primary">
+              <h2 class="text-lg">FireForms App</h2>
+
+              <p class="text-sm">
+                A web app that help users build multi-page forms through a drag
+                and drop builder. User accounts, payment through stripe and
+                fully embeddable forms. Download form responses or integrate
+                with CRM of your choosing
+              </p>
+
+              <div class="flex items-center gap-2">
+                <p class="text-xs">
+                  <a class="" href="https://fireforms.io" target="”_blank”">
+                    <i class="fas fa-external-link-alt"></i>
+                  </a>
                   <i class="fab fa-github fa-lg"></i>
-                <a
-                  class="social-item"
-                  href="https://fireforms.io"
-                  target="”_blank”"
-                >
-                  <i class="fas fa-external-link-alt"></i>
-                </a>
+                </p>
+                <p class="text-xs">(Code available at request)</p>
               </div>
+              <ul class="flex gap-2 text-sm">
+                <li>React |</li>
+                <li>Express |</li>
+                <li>Node.js |</li>
+                <li>MongoDB</li>
+              </ul>
             </div>
-        </div>
-        <!-- fireforms Landing Page -->
-        <div class="project-list-item">
-            <div class="project-thumb">
-        
-              <img src="/public/landingPage.png" alt="fireforms builder" class="gif">
-            </div>
-            <div class="project-content">
-              <div class="project-title">
-                <h2>FireForms Marketing Site</h2>
-              </div>
-              <div class="project-description">
-                <p>
-                  Marketing site and blog built using next.js and tailwind css. Blogposts are writen in markdown and converted to HTML with the help of remark and remark-HTML. 
+          </div>
+          <!-- / right aligned -->
+          <div class="text-primary w-full mb-2">
+            <hr class="hr-custom" />
+          </div>
+          <!--left aligned  -->
+          <div class="flex w-full justify-between = p-2">
+            <div class="flex flex-col gap-1 text-primary w-full">
+              <h2 class="text-lg">MovieWatch</h2>
+
+              <p class="text-sm">
+                Discover and organize your ultimate movie night with our app,
+                connecting you to your favorite films in just a few taps!
+              </p>
+
+              <div class="flex items-center justify-end gap-2">
+                <p class="text-xs">
+                  <a
+                    class=""
+                    href="https://github.com/seananth/movie-watchlist"
+                    target="”_blank”"
+                  >
+                    <i class="fab fa-github fa-lg"></i>
+                  </a>
+                  <a
+                    class=""
+                    href="https://illustrious-druid-bc0851.netlify.app/"
+                    target="”_blank”"
+                  >
+                    <i class="fas fa-external-link-alt"></i>
+                  </a>
                 </p>
               </div>
-              <div class="project-tech">
-                <p>React -</p>
-                <p>Next.js -</p>
-                <p>Tailwind CSS</p>
-              </div>
-              <div class="project-link">
-                <a
-                class="social-item"
-                href="https://github.com/seananth/fireforms-marketing"
-                target="”_blank”"
-                >
-                <i class="fab fa-github fa-lg"></i>
-                </a>
-                <a
-                  class="social-item"
-                  href="https://fireforms.io"
-                  target="”_blank”"
-                >
-                  <i class="fas fa-external-link-alt"></i>
-                </a>
-              </div>
+              <ul class="flex gap-2 justify-end text-sm">
+                <li>React |</li>
+                <li>Tailwind CSS</li>
+              </ul>
             </div>
-        </div>
-        <div class="project-list-item">
-            <div class="project-thumb">
-        
-              <img src="/public/moviedb.png" alt="fireforms builder" class="gif">
-            </div>
-            <div class="project-content">
-              <div class="project-title">
-                <h2>MovieWatch</h2>
-              </div>
-              <div class="project-description">
-                <p>
-                  Find your favorite movies and plan your next movie night!
-                </p>
-              </div>
-              <div class="project-tech">
-                <p>React -</p>
-                <p>Tailwind CSS</p>
-              </div>
-              <div class="project-link">
-                <a
-                class="social-item"
-                href="https://github.com/seananth/movie-watchlist"
-                target="”_blank”"
-                >
-                <i class="fab fa-github fa-lg"></i>
-                </a>
-                <a
-                  class="social-item"
-                  href="https://illustrious-druid-bc0851.netlify.app/"
-                  target="”_blank”"
-                >
-                  <i class="fas fa-external-link-alt"></i>
-                </a>
-              </div>
-            </div>
+          </div>
+          <!-- / left aligned -->
         </div>
       </section>
     </div>

@@ -1,166 +1,20 @@
-html,
-body {
-  font-family: "Inter", sans-serif;
-  color: white;
-  height: 100vh;
-  background: #1c1c1c;
+.hr-custom {
+  background-image: repeating-linear-gradient(
+    -45deg,
+    transparent,
+    transparent 8px,
+    currentColor 8px,
+    currentColor 10px
+  );
+  height: 2px;
+  border: none;
 }
 
-.container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+.example::-webkit-scrollbar {
+  display: none;
 }
-.hero {
-  display: flex;
-  justify-content: center;
-  margin-top: 10%;
-}
-.profile-pic {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  border-radius: 50%;
-  width: 20%;
-}
-.profile-pic:hover {
-  transform: rotate3d(1, 2, 3, -10deg);
-}
-.hero-content {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  text-align: center;
-}
-.head-text {
-  margin-bottom: -1%;
-}
-.socials {
-  display: flex;
-  justify-content: center;
-}
-.social-item {
-  margin: 0 5px 0 5px;
-  color: white;
-}
-a:visited {
-  text-decoration: none;
-  color: white;
-}
-a:hover {
-  text-decoration: none;
-  color: #3884ff;
-}
-.projects {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-.projects-header {
-  width: 100%;
-  text-align: start;
-}
-.project-list-item {
-  color: white;
-  display: flex;
-  align-items: center;
-  border-radius: 12px;
-  list-style: none;
-  padding: 1em;
-  display: flex;
 
-  margin-bottom: 4em;
-  width: 900px;
-}
-.project-list-item:hover {
-  transform: scale(1.01);
-  border: 1px solid white;
-}
-.project-thumb {
-  height: 200px;
-  overflow: hidden;
-  margin-right: 2em;
-}
-.gif {
-  /* width: ; */
-  height: 100%;
-}
-.project-title {
-  text-align: end;
-}
-.project-description {
-  padding-top: 1em;
-  border-radius: 8px;
-  max-width: 500px;
-  text-align: end;
-}
-.project-tech {
-  display: flex;
-  justify-content: end;
-}
-.project-tech p {
-  margin-left: 8px;
-}
-.project-link {
-  display: flex;
-  justify-content: end;
-  align-items: center;
-}
-.project-link p {
-  margin-right: 5px;
-  font-size: small;
-}
-.project-link a {
-  color: #fff;
-}
-.project-link a:hover {
-  color: #3884ff;
-}
-.form {
-  width: 100%;
-}
-/* Responsive layout */
-@media (max-width: 1100px) {
-  .project-list-item {
-    flex-direction: column;
-    align-items: center;
-    width: auto;
-  }
-  .project-title {
-    text-align: left;
-  }
-  .project-description {
-    padding-top: 0;
-    text-align: left;
-  }
-}
-@media (max-width: 800px) {
-  .project-list-item {
-    flex-direction: column;
-    align-items: center;
-    width: auto;
-  }
-  .project-title {
-    text-align: left;
-  }
-  .project-description {
-    padding-top: 0;
-    text-align: left;
-  }
-}
-@media (max-width: 425px) {
-  .project-list-item {
-    flex-direction: column;
-    align-items: center;
-    width: auto;
-  }
-  .projects-header {
-    width: auto;
-  }
-}
-.formBackground {
-  background-color: white;
-  padding: 2em;
-  margin-bottom: 10em;
+.example {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
 }
