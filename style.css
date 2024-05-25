@@ -18,3 +18,14 @@
   -ms-overflow-style: none; /* IE and Edge */
   scrollbar-width: none; /* Firefox */
 }
+
+body {
+  font-family: "Bricolage Grotesque", sans-serif;
+
+  background-color: #fbfea3;
+  opacity: 1;
+  background-image: radial-gradient(#008080 0.75px, transparent 0.75px),
+    radial-gradient(#008080 0.75px, #fbfea3 0.75px);
+  background-size: 30px 30px;
+  background-position: 0 0, 15px 15px;
+}

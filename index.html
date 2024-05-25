@@ -9,10 +9,11 @@
       src="https://kit.fontawesome.com/0f9b4aa4e2.js"
       crossorigin="anonymous"
     ></script>
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&display=swap"
       rel="stylesheet"
     />
 
@@ -49,9 +50,9 @@
       };
     </script>
   </head>
-  <body class="bg-primary h-screen font-mono flex items-center px-2 md:px-0">
+  <body class="h-screen flex items-center px-2 md:px-0">
     <div
-      class="bg-background py-4 rounded-md h-[calc(100vh-74px)] container mx-auto px-12 max-w-[800px] overflow-y-scroll example"
+      class="bg-background opacity-100 py-4 rounded-md h-[calc(100vh-74px)] container mx-auto px-12 max-w-[800px] overflow-y-scroll example"
     >
       <section id="intro">
         <div class="flex items-center justify-between text-primary p-4">
@@ -61,9 +62,11 @@
               src="./public/profilepic.jpeg"
               alt="me"
             />
-            <div>
-              <p class="text-lg">Sean Säfström</p>
-              <p>Javascript Engineer - Always building 🚀</p>
+            <div class="flex flex-col">
+              <p class="text-xl font-extrabold leading-none">Sean Säfström</p>
+
+              <!-- <p class="text-lg leading-6">Javascript Engineer</p> -->
+              <p>I Build Stuff - Sometimes They're Useful 🚀</p>
             </div>
           </div>
           <div class="flex flex-col gap-2">
@@ -91,12 +94,43 @@
 
       <section id="projects">
         <div class="flex flex-col gap-4">
-          <!--left aligned  -->
+          <!-- SESNAP -->
           <div class="flex w-full justify-between p-2">
             <div class="flex flex-col gap-1 text-primary w-full">
-              <h2 class="text-lg">SpotEnt (current)</h2>
+              <h2 class="text-lg font-bold leading-none">SESnap</h2>
 
-              <p class="text-sm">
+              <p class="text-sm leading-snug">
+                Ditch pricey subscriptions! Host your own newsletter platform
+                for free, connect your AWS SES account, and start sending emails
+                for a fraction of the cost. Pay only for what you use and get
+                all future updates with a one-time payment.
+              </p>
+
+              <div class="flex items-center justify-end gap-2">
+                <p class="text-xs">
+                  <a class="" href="https://www.sesnap.com/" target="”_blank”">
+                    <i class="fas fa-external-link-alt"></i>
+                  </a>
+                </p>
+              </div>
+              <ul class="flex gap-2 justify-end text-sm">
+                <li>NextJS |</li>
+                <li>Prisma |</li>
+                <li>AWS</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="text-primary w-full mb-2">
+            <hr class="hr-custom" />
+          </div>
+
+          <!--SPOTENT  -->
+          <div class="flex w-full justify-between p-2">
+            <div class="flex flex-col gap-1 text-primary w-full">
+              <h2 class="text-lg font-bold leading-none">SpotEnt</h2>
+
+              <p class="text-sm leading-snug">
                 Turn Your Ideas Into Impactful Newsletters with SpotEnt.
                 launching stunning newsletters is as easy as clicking 'send.'
                 Elevate your message, grow your community, and watch your
@@ -123,25 +157,27 @@
           <div class="text-primary w-full mb-2">
             <hr class="hr-custom" />
           </div>
-          <!--right aligned  -->
-          <div class="w-full flex justify-between = p-2">
-            <div class="w-full flex flex-col text-right gap-1 text-primary">
-              <h2 class="text-lg">SpaceToast</h2>
 
-              <p class="text-sm">
+          <!--SpaceToast  -->
+
+          <div class="flex w-full justify-between p-2">
+            <div class="flex flex-col gap-1 text-primary w-full">
+              <h2 class="text-lg font-bold leading-none">SpaceToast</h2>
+
+              <p class="text-sm leading-snug">
                 A crypto newsletter designed to demystify cryptocurrency for the
                 everyday tech enthusiast, powered by Next.js and managed with
                 Sanity CMS.
               </p>
 
-              <div class="flex items-center gap-2">
+              <div class="flex items-center justify-end gap-2">
                 <p class="text-xs">
                   <a class="" href="https://spacetoast.co/" target="”_blank”">
                     <i class="fas fa-external-link-alt"></i>
                   </a>
                 </p>
               </div>
-              <ul class="flex gap-2 text-sm">
+              <ul class="flex gap-2 justify-end text-sm">
                 <li>NextJS |</li>
                 <li>Typescript |</li>
                 <li>Sanity CMS</li>
@@ -152,12 +188,12 @@
           <div class="text-primary w-full mb-2">
             <hr class="hr-custom" />
           </div>
-          <!--left aligned  -->
+          <!--Ducktize  -->
           <div class="flex w-full justify-between = p-2">
             <div class="flex flex-col gap-1 text-primary w-full">
-              <h2 class="text-lg">Ducktize</h2>
+              <h2 class="text-lg font-bold leading-none">Ducktize</h2>
 
-              <p class="text-sm">
+              <p class="text-sm leading-snug">
                 Comprehensive project management software tailored for
                 subscription-based services, featuring a robust customer portal
                 to facilitate seamless collaboration.
@@ -181,28 +217,26 @@
           <div class="text-primary w-full mb-2">
             <hr class="hr-custom" />
           </div>
-          <!--right aligned  -->
-          <div class="w-full flex justify-between = p-2">
-            <div class="w-full flex flex-col text-right gap-1 text-primary">
-              <h2 class="text-lg">FireForms App</h2>
+          <!--FireForms  -->
+          <div class="flex w-full justify-between = p-2">
+            <div class="flex flex-col gap-1 text-primary w-full">
+              <h2 class="text-lg font-bold leading-none">FireForms</h2>
 
-              <p class="text-sm">
+              <p class="text-sm leading-snug">
                 A web app that help users build multi-page forms through a drag
                 and drop builder. User accounts, payment through stripe and
                 fully embeddable forms. Download form responses or integrate
                 with CRM of your choosing
               </p>
 
-              <div class="flex items-center gap-2">
+              <div class="flex items-center justify-end gap-2">
                 <p class="text-xs">
                   <a class="" href="https://fireforms.io" target="”_blank”">
                     <i class="fas fa-external-link-alt"></i>
                   </a>
-                  <i class="fab fa-github fa-lg"></i>
                 </p>
-                <p class="text-xs">(Code available at request)</p>
               </div>
-              <ul class="flex gap-2 text-sm">
+              <ul class="flex gap-2 justify-end text-sm">
                 <li>React |</li>
                 <li>Express |</li>
                 <li>Node.js |</li>
@@ -210,6 +244,7 @@
               </ul>
             </div>
           </div>
+
           <!-- / right aligned -->
           <div class="text-primary w-full mb-2">
             <hr class="hr-custom" />
@@ -217,9 +252,9 @@
           <!--left aligned  -->
           <div class="flex w-full justify-between = p-2">
             <div class="flex flex-col gap-1 text-primary w-full">
-              <h2 class="text-lg">MovieWatch</h2>
+              <h2 class="text-lg font-bold leading-6 leading-none">MovieWatch</h2>
 
-              <p class="text-sm">
+              <p class="text-sm leading-snug">
                 Discover and organize your ultimate movie night with our app,
                 connecting you to your favorite films in just a few taps!
               </p>
