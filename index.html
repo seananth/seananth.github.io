@@ -42,24 +42,25 @@
         theme: {
           extend: {
             colors: {
-              primary: "#fbfea3",
-              background: "#008080",
+              primary: "#15616D",
+              background: "#001524",
+              text: "#fafafa",
             },
           },
         },
       };
     </script>
   </head>
-  <body class="h-screen flex items-center px-2 md:px-0">
+  <body class="h-screen flex items-center px-2 md:px-0 text-text">
     <div
       class="bg-background opacity-100 py-4 rounded-md h-[calc(100vh-74px)] container mx-auto px-12 max-w-[800px] overflow-y-scroll example"
     >
       <section id="intro">
-        <div class="flex items-center justify-between text-primary p-4">
+        <div class="flex items-center justify-between p-4">
           <div class="flex gap-4 items-center">
             <img
               class="w-16 rounded-full"
-              src="./public/profilepic.jpeg"
+              src="./public/profilepic.jpg"
               alt="me"
             />
             <div class="flex flex-col">
@@ -88,15 +89,47 @@
         </div>
       </section>
 
-      <div class="text-primary w-full mb-8">
+      <div class="w-full mb-8">
         <hr class="hr-custom" />
       </div>
 
       <section id="projects">
         <div class="flex flex-col gap-4">
+          <!--Workout builder  -->
+          <div class="flex w-full justify-between = p-2">
+            <div class="flex flex-col gap-1 w-full">
+              <h2 class="text-lg font-bold leading-none">Hypertrophy.xyz</h2>
+
+              <p class="text-sm leading-snug">
+                Creating a workout plan is hard & most people dont know how much
+                volume they're doing. This app will help you build a workout
+                plan and make sure you're not skipping any body parts!
+              </p>
+
+              <div class="flex items-center justify-end gap-2">
+                <p class="text-xs">
+                  <a
+                    class=""
+                    href="https://www.hypertrophy.xyz/create-workout-plan"
+                    target="”_blank”"
+                  >
+                    <i class="fas fa-external-link-alt"></i>
+                  </a>
+                </p>
+              </div>
+              <ul class="flex gap-2 justify-end text-sm">
+                <li>NextJS</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- / right aligned -->
+          <div class="w-full mb-2">
+            <hr class="hr-custom" />
+          </div>
           <!-- SESNAP -->
           <div class="flex w-full justify-between p-2">
-            <div class="flex flex-col gap-1 text-primary w-full">
+            <div class="flex flex-col gap-1 w-full">
               <h2 class="text-lg font-bold leading-none">SESnap</h2>
 
               <p class="text-sm leading-snug">
@@ -121,13 +154,13 @@
             </div>
           </div>
 
-          <div class="text-primary w-full mb-2">
+          <div class="w-full mb-2">
             <hr class="hr-custom" />
           </div>
 
           <!--SPOTENT  -->
           <div class="flex w-full justify-between p-2">
-            <div class="flex flex-col gap-1 text-primary w-full">
+            <div class="flex flex-col gap-1 w-full">
               <h2 class="text-lg font-bold leading-none">SpotEnt</h2>
 
               <p class="text-sm leading-snug">
@@ -154,14 +187,14 @@
             </div>
           </div>
           <!-- / left aligned -->
-          <div class="text-primary w-full mb-2">
+          <div class="w-full mb-2">
             <hr class="hr-custom" />
           </div>
 
           <!--SpaceToast  -->
 
           <div class="flex w-full justify-between p-2">
-            <div class="flex flex-col gap-1 text-primary w-full">
+            <div class="flex flex-col gap-1 w-full">
               <h2 class="text-lg font-bold leading-none">SpaceToast</h2>
 
               <p class="text-sm leading-snug">
@@ -185,12 +218,12 @@
             </div>
           </div>
           <!-- / right aligned -->
-          <div class="text-primary w-full mb-2">
+          <div class="w-full mb-2">
             <hr class="hr-custom" />
           </div>
           <!--Ducktize  -->
           <div class="flex w-full justify-between = p-2">
-            <div class="flex flex-col gap-1 text-primary w-full">
+            <div class="flex flex-col gap-1 w-full">
               <h2 class="text-lg font-bold leading-none">Ducktize</h2>
 
               <p class="text-sm leading-snug">
@@ -214,12 +247,12 @@
             </div>
           </div>
           <!-- / left aligned -->
-          <div class="text-primary w-full mb-2">
+          <div class="w-full mb-2">
             <hr class="hr-custom" />
           </div>
           <!--FireForms  -->
           <div class="flex w-full justify-between = p-2">
-            <div class="flex flex-col gap-1 text-primary w-full">
+            <div class="flex flex-col gap-1 w-full">
               <h2 class="text-lg font-bold leading-none">FireForms</h2>
 
               <p class="text-sm leading-snug">
@@ -246,44 +279,13 @@
           </div>
 
           <!-- / right aligned -->
-          <div class="text-primary w-full mb-2">
+          <div class="w-full mb-2">
             <hr class="hr-custom" />
           </div>
-          <!--Workout builder  -->
-          <div class="flex w-full justify-between = p-2">
-            <div class="flex flex-col gap-1 text-primary w-full">
-              <h2 class="text-lg font-bold leading-none">hypertrophy.xyz</h2>
 
-              <p class="text-sm leading-snug">
-                Creating a workout plan is hard & most people dont know how much
-                volume they're doing. This app will help you build a workout
-                plan and make sure you're not skipping any body parts!
-              </p>
-
-              <div class="flex items-center justify-end gap-2">
-                <p class="text-xs">
-                  <a
-                    class=""
-                    href="https://www.hypertrophy.xyz/"
-                    target="”_blank”"
-                  >
-                    <i class="fas fa-external-link-alt"></i>
-                  </a>
-                </p>
-              </div>
-              <ul class="flex gap-2 justify-end text-sm">
-                <li>NextJS</li>
-              </ul>
-            </div>
-          </div>
-
-          <!-- / right aligned -->
-          <div class="text-primary w-full mb-2">
-            <hr class="hr-custom" />
-          </div>
           <!--left aligned  -->
           <div class="flex w-full justify-between = p-2">
-            <div class="flex flex-col gap-1 text-primary w-full">
+            <div class="flex flex-col gap-1 w-full">
               <h2 class="text-lg font-bold leading-6 leading-none">
                 MovieWatch
               </h2>
